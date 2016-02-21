@@ -7,7 +7,7 @@
 # optionally be specified as an argument; otherwise timestamps will be
 # converted to ISO 8601 format.
 #
-# Version 1, February 20, 2016
+# Version 1.1, February 20, 2016
 #
 # Copyright (c) 2016, Yvan Rodrigues. All rights reserved.
 # This software is distributed under the terms of the New BSD License.
