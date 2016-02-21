@@ -1,6 +1,8 @@
 # rostime
 ROSTIME reads log files from stdin and converts all UNIX timestamps to formatted datetimes.
 
+![epoch fail](http://imgs.xkcd.com/comics/bug.png)
+
 ## Usage
 `rosdate < infile > outfile [format]`
 
