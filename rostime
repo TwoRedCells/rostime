@@ -33,4 +33,4 @@ if argc > 1:
 
 # Read and translate lines from stdin.
 for line in sys.stdin:
-        print re.sub(REGEX, translate, line)
+        print re.sub(REGEX, translate, line),
