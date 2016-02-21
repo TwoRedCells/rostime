@@ -1,0 +1,36 @@
+#!/usr/bin/env python
+#
+# rostime - Parse ROS log files and format timestamps.
+# Usage: rosdate < infile > outfile [format]
+#
+# The application reads from stdin and writes to stdout. A date format can
+# optionally be specified as an argument; otherwise timestamps will be
+# converted to ISO 8601 format.
+#
+# Version 1, February 20, 2016
+#
+# Copyright (c) 2016, Yvan Rodrigues. All rights reserved.
+# This software is distributed under the terms of the New BSD License.
+# https://en.wikipedia.org/wiki/BSD_licenses
+
+import sys
+import re
+from datetime import datetime
+
+REGEX = '\d{10}\.\d{4,6}'
+FORMAT = '%Y-%m-%dT%H:%M:%S'
+
+# Convert timestamp to formatted time.
+def translate(value):
+        stamp = float(value.group(0))
+        dt = datetime.fromtimestamp(stamp)
+        return dt.strftime(FORMAT)
+
+# Use user-supplied format, if provided.
+argc = len(sys.argv)
+if argc > 1:
+        FORMAT = sys.argv[1]
+
+# Read and translate lines from stdin.
+for line in sys.stdin:
+        print re.sub(REGEX, translate, line)
