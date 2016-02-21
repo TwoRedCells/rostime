@@ -14,6 +14,6 @@ converted to [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601).
 February 20, 2016: Version 1, Initial release.
 
 ## License
-Copyright (c) 2016, Yvan Rodrigues. All rights reserved.  
+Copyright (c) 2016, [Yvan Rodrigues](http://yvanrodrigues.com). All rights reserved.  
 This software is distributed under the terms of the New BSD License.  
 https://en.wikipedia.org/wiki/BSD_licenses
