@@ -4,7 +4,7 @@ ROSTIME reads log files from stdin and converts all UNIX timestamps to formatted
 ![epoch fail](http://imgs.xkcd.com/comics/bug.png)
 
 ## Usage
-`rosdate < infile > outfile [format]`
+`rostime < infile > outfile [format]`
 
 The application reads from `stdin` and writes to `stdout`.   
 A date format can optionally be specified as an argument, in [`strftime` format](https://docs.python.org/2/library/datetime.html#strftime-strptime-behavior); otherwise timestamps will be
