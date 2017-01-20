@@ -23,7 +23,7 @@ FORMAT = '%Y-%m-%dT%H:%M:%S'
 # Convert timestamp to formatted time.
 def translate(value):
         stamp = float(value.group(0))
-        dt = datetime.fromtimestamp(stamp)
+        dt = datetime.utcfromtimestamp(stamp)
         return dt.strftime(FORMAT)
 
 # Use user-supplied format, if provided.
