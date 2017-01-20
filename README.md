@@ -12,6 +12,7 @@ converted to [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601).
 
 ## History
 February 20, 2016: Version 1, Initial release.
+January 20, 2017: Version 2, `utcfromtimestamp()` is used instead of `fromtimestamp()`.
 
 ## License
 Copyright (c) 2016, [Yvan Rodrigues](http://yvanrodrigues.com). All rights reserved.  
